@@ -51,6 +51,7 @@ fn main() {
     }
 
 
+    // choose story from html doc with the correct css selector
     for story_element in document.select(&story_selector) {
         let title_element = story_element.select(&title_selector).next();
         let title = title_element.map_or("N/A".to_string(), |el| el.text().collect::<String>());
