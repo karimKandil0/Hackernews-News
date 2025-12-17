@@ -1,0 +1,22 @@
+# Rust
+/scraper/target
+/scraper/Cargo.lock
+
+# Data - Ignore all data files
+/data/*
+!/data/.gitignore
+
+# Python
+__pycache__/
+*.pyc
+.venv
+venv
+
+# Editor-specific
+.vscode/
+.zed/
+/.ropeproject/
+
+# Nix build results
+result*
+.direnv/
